@@ -80,8 +80,8 @@ h3 {
 
 .card {
   background-color: var(--white);
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
   border-radius: 25px;
-  border: 1px solid var(--dark-blue);
   display: flex;
   max-width: 600px;
   height: 320px;
