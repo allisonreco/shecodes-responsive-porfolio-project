@@ -1,15 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 @font-face {
-  font-family: "black mango medium";
-  src: url("fonts/blackmango-medium-webfont.woff2") format("woff2");
-  src: url("fonts/blackmango-medium-webfont.woff") format("woff");
+  font-family: "Black Mango Medium";
+  src: url("/fonts/blackmango-medium-webfont.woff2") format("woff2");
+  src: url("/fonts/blackmango-medium-webfont.woff") format("woff");
 }
 
 @font-face {
-  font-family: "black mango light";
-  src: url("fonts/blackmango-light-webfont.woff2") format("woff2");
-  src: url("fonts/blackmango-light-webfont.woff") format("woff");
+  font-family: "Black Mango Light";
+  src: url("/fonts/blackmango-light-webfont.woff2") format("woff2");
+  src: url("/fonts/blackmango-light-webfont.woff") format("woff");
 }
 
 :root {
@@ -18,11 +18,13 @@
   --white: #ffffff;
   --black: #303030;
   --pink: #ffcad4;
+  --font-headline-light: "Black Mango Light", serif;
+  --font-headline-bold: "Black Mango Medium", serif;
+  --font-content: Montserrat, sans-serif;
 }
 
-*{
-     font-family: Montserrat,serif;
-
+* {
+  font-family: var(--font-content);
 }
 
 body {
@@ -37,9 +39,21 @@ body {
   margin: 0;
 }
 
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -69,18 +83,40 @@ nav a:hover {
   border: 1px solid var(--dark-blue);
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid var(--dark-blue);
-  padding: 1em 2em;
-   color: var(--dark-blue);
+h1 {
+  font-family: var(--font-headline-light);
 }
 
-footer > span > i{
+footer {
+  border-top: 1px solid var(--dark-blue);
+  padding: 1em 2em;
+  color: var(--dark-blue);
+}
+
+footer > div {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+}
+
+footer i {
   color: var(--light-blue);
 }
 
+footer a {
+  cursor: pointer;
+}
+
+footer a:hover > i {
+  color: var(--dark-blue);
+}
+
+main {
+  padding: 2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
 
 .footer-right {
   display: flex;
@@ -103,10 +139,17 @@ footer > span > i{
 }
 
 .nav-logo > img {
-  height: 15px;
+  height: 26px;
 }
 
-@media only screen and (max-width: 620px) {
+.vertical-line {
+  margin: 0 auto;
+  width: fit-content;
+  border-left: 1px solid var(--black);
+  height: 50px;
+}
+
+@media only screen and (max-width: 680px) {
   .nav-logo > img:last-of-type {
     display: none;
   }

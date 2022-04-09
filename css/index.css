@@ -1,0 +1,139 @@
+h2 {
+  font-family: var(--font-headline-bold);
+  font-size: 60px;
+  text-align: center;
+  color: var(--black);
+}
+
+h3 {
+  font-family: var(--font-headline-bold);
+  font-size: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero > div {
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero > div:nth-of-type(1) {
+  flex: 1;
+  background-image: url("/images/sparkles-index.svg");
+}
+
+.hero > div:nth-of-type(2) {
+  flex: 4;
+  background-image: url("/images/hero.svg");
+}
+
+.hero > div:nth-of-type(3) {
+  flex: 1;
+  background-image: url("/images/sparkles-index.svg");
+  transform: scaleX(-1);
+}
+
+.intro {
+  text-align: center;
+}
+
+.signature {
+  font-family: var(--font-headline-bold);
+}
+
+.contact-button {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 1em;
+}
+
+.contact-button > a {
+  font-family: var(--font-headline-bold);
+  color: var(--white);
+  background-color: var(--light-blue);
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-button > a:hover {
+  color: var(--dark-blue);
+  background-color: var(--pink);
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 680px) {
+  .hero > div:nth-of-type(1),
+  .hero > div:nth-of-type(3) {
+    display: none;
+  }
+  .hero > div:nth-of-type(2) {
+    flex: 1;
+  }
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 25px;
+  border: 1px solid var(--dark-blue);
+  display: flex;
+  max-width: 600px;
+  height: 320px;
+  margin: 0 auto;
+  margin-top: 6em;
+  margin-bottom: 3em;
+}
+
+.card > div:first-of-type {
+  flex: 2;
+  padding: 3em;
+  min-width: 300px;
+}
+
+.card > div:last-of-type {
+  flex: 1;
+}
+
+.card img {
+  max-width: 375px;
+  position: relative;
+  z-index: 10;
+  bottom: 54px;
+  right: -20px;
+}
+
+@media only screen and (max-width: 680px) {
+  .card {
+    flex-direction: column;
+    height: unset;
+  }
+
+  .card > div:first-of-type {
+    flex: 1;
+    padding: 1em;
+    min-width: unset;
+  }
+
+  .card > div:last-of-type {
+    align-self: end;
+  }
+
+  .card img {
+    position: relative;
+    max-width: 360px;
+    right: 20px;
+    bottom: -3px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card img {
+    width: 70%;
+  }
+}
