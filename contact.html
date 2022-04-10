@@ -48,17 +48,19 @@
           <h2>Let's start an awesome project</h2>
           <h3>
             If you prefer, reach out at
-            <a href="mailto:allisonreyes.dev@gmail.com"></a
-            >allisonreyes.dev@gmail.com
+            <a href="mailto:allisonreyes.dev@gmail.com"
+              >allisonreyes.dev@gmail.com</a
+            >
           </h3>
 
-          <div>
+          <form>
             <label for="input-name">My name is</label>
             <input
               id="input-name"
               type="text"
               placeholder="Your name"
               onkeyup="enableButton()"
+              required
             />
 
             <label for="input-company">I work at</label>
@@ -67,6 +69,7 @@
               type="text"
               placeholder="Your company"
               onkeyup="enableButton()"
+              required
             />
 
             <label for="input-email">My e-mail is</label>
@@ -75,6 +78,7 @@
               type="email"
               placeholder="Your e-mail"
               onkeyup="enableButton()"
+              required
             />
 
             <p>I'm looking for a partner to help me with:</p>
@@ -133,10 +137,10 @@
               type="submit"
               id="submit-button"
               value="Get in touch"
-              disabled="disabled"
+              disabled
               onclick="submitForm()"
             />
-          </div>
+          </form>
         </div>
         <div></div>
       </div>

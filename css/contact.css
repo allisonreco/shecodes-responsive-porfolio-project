@@ -37,7 +37,7 @@ h3 {
   padding: 5em;
 }
 
-.contact-panel > div {
+.contact-panel > form {
   display: flex;
   flex-direction: column;
 }
@@ -45,6 +45,7 @@ h3 {
 .contact-panel input[type="text"],
 .contact-panel input[type="email"] {
   font-size: medium;
+  border-radius: 0;
 }
 
 .contact-panel textarea {
@@ -55,14 +56,19 @@ h3 {
 .contact-panel input[type="text"],
 .contact-panel input[type="email"] {
   border: none;
+  border-radius: 0%;
   border-bottom: 1.2px solid var(--light-blue);
 }
 
 .contact-panel input[type="text"]:focus,
-.contact-panel input[type="email"]:focus,
-.contact-panel textarea:focus {
+.contact-panel input[type="email"]:focus {
   outline: none;
   border-bottom: 1.2px solid var(--pink);
+}
+
+.contact-panel textarea:focus {
+  outline: none;
+  border: 1.2px solid var(--pink);
 }
 
 .contact-panel input[type="text"],
