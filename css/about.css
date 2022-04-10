@@ -75,6 +75,7 @@
 .cv-panel {
   margin: 0 auto;
   margin-top: 3em;
+  margin-bottom: 3em;
   border-radius: 50px;
   background-color: var(--white);
   display: flex;

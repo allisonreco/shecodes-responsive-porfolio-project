@@ -14,11 +14,13 @@
 
 :root {
   --dark-blue: #405476;
+  --dark-blue-a30: rgba(64, 84, 118, 0.3);
   --light-blue: #89aedd;
   --blue-grey: #a6aeb8;
   --white: #ffffff;
   --black: #303030;
   --pink: #ffcad4;
+  --pink-a60: rgb(255, 202, 212);
   --font-headline-light: "Black Mango Light", serif;
   --font-headline-bold: "Black Mango Medium", serif;
   --font-content: Montserrat, sans-serif;
@@ -98,9 +100,9 @@ h1 {
 }
 
 footer {
-  border-top: 1px solid var(--dark-blue);
+  border-top: 1px solid var(--dark-blue-a30);
   padding: 1em 2em;
-  color: var(--dark-blue);
+  color: var(--dark-blue-a30);
 }
 
 footer > div {
@@ -110,14 +112,16 @@ footer > div {
   max-width: 900px;
 }
 
-footer i {
-  color: var(--light-blue);
+footer i,
+footer > div > span,
+footer > div > span > a {
+  color: var(--dark-blue-a30);
 }
 
 footer a {
   cursor: pointer;
 }
-
+footer a:hover,
 footer a:hover > i {
   color: var(--dark-blue);
 }

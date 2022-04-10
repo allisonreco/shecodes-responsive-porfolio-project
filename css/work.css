@@ -1,5 +1,7 @@
 h2 {
   margin-top: -20px;
+  font-family: var(--font-headline-bold);
+  color: var(--dark-blue);
 }
 
 h2,
@@ -94,6 +96,7 @@ h2,
 .card-image > img {
   margin: 0 auto;
   width: 160px;
+  box-shadow: 2px 1px 33px rgba(146, 127, 102, 0.333);
 }
 
 .card-text {
@@ -146,6 +149,7 @@ h2,
   background-color: var(--light-blue);
   font-size: small;
   padding: 0.5em 1em;
+  border-radius: 2px;
 }
 
 .card-button-repo {
