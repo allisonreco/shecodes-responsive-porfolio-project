@@ -178,11 +178,20 @@ h1,
 
   .card-text {
     text-align: center;
+    height: unset;
+  }
+
+  .card-text > div:first-of-type {
+    height: unset;
   }
 
   .card-text h3 {
     font-size: xx-large;
     text-align: center;
+  }
+
+  .card-text p {
+    margin-bottom: 2em;
   }
 
   .card-text > div:last-of-type {
