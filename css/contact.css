@@ -1,0 +1,131 @@
+h2 {
+  margin-top: 0;
+  font-family: var(--font-headline-bold);
+}
+h3 {
+  font-weight: 500;
+  margin-bottom: 0;
+  margin-bottom: 3em;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-container > div {
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.contact-container > div:nth-of-type(1) {
+  flex: 1;
+  background-image: url("/images/sparkles-index.svg");
+}
+
+.contact-container > div:nth-of-type(3) {
+  flex: 1;
+  background-image: url("/images/sparkles-index.svg");
+  transform: scaleX(-1);
+}
+
+.contact-panel {
+  background-color: var(--white);
+  border-radius: 25px;
+  padding: 5em;
+}
+
+.contact-panel > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"] {
+  font-size: medium;
+}
+
+.contact-panel textarea {
+  border: 1px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"] {
+  border: none;
+  border-bottom: 1.2px solid var(--light-blue);
+}
+
+.contact-panel input[type="text"]:focus,
+.contact-panel input[type="email"]:focus,
+.contact-panel textarea:focus {
+  outline: none;
+  border-bottom: 1.2px solid var(--pink);
+}
+
+.contact-panel input[type="text"],
+.contact-panel input[type="email"] {
+  margin-bottom: 16px;
+}
+
+.contact-panel label,
+.contact-panel p {
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.contact-panel input[type="submit"] {
+  width: 200px;
+}
+
+.contact-panel input[type="submit"] {
+  width: fit-content;
+  margin-top: 3em;
+  color: var(--white);
+  background-color: var(--light-blue);
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-panel input[type="submit"]:hover {
+  color: var(--dark-blue);
+  cursor: pointer;
+  background-color: var(--pink);
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
+}
+
+.tasks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tasks > div {
+  width: 160px;
+}
+
+.tasks:last-of-type {
+  margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 680px) {
+  .contact-container > div:nth-of-type(1),
+  .contact-container > div:nth-of-type(3) {
+    display: none;
+  }
+
+  .contact-panel {
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 2em;
+  }
+
+  .tasks {
+    flex-direction: column;
+  }
+}

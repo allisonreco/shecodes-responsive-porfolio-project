@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 
 @font-face {
   font-family: "Black Mango Medium";
@@ -79,11 +79,17 @@ nav a {
   font-family: montserrat;
   border-radius: 50px;
   border: 1px solid transparent;
+  padding: 5px 10px;
+  transition: all 200ms ease-in-out;
 }
 
 nav a:hover {
   cursor: pointer;
-  border: 1px solid var(--dark-blue);
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  padding: 5px 10px;
+  border-radius: 50px;
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
