@@ -137,3 +137,34 @@ h3 {
     width: 70%;
   }
 }
+
+.cta-email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 360px;
+}
+
+.cta-email > span {
+  font-family: var(--font-headline-light);
+  display: block;
+  padding: 1em 1em;
+}
+
+.cta-email > span:last-of-type {
+  display: block;
+  background-color: var(--light-blue);
+  color: var(--white);
+  border-radius: 25px;
+  transition: all 200ms ease-in-out;
+}
+
+.cta-email > span:last-of-type:hover {
+  background-color: var(--pink);
+  color: var(--dark-blue);
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+}
