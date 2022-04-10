@@ -1,0 +1,137 @@
+.alli {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3em;
+  margin-bottom: 3em;
+}
+
+.alli > div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.alli > div:first-of-type {
+  flex: 1;
+  background-image: url("/images/sparkles-about-left.svg");
+  background-size: 500px;
+  background-position: left top;
+}
+
+.alli > div:last-of-type {
+  flex: 1;
+  background-image: url("/images/sparkles-about-right.svg");
+  background-size: 300px;
+}
+
+.alli img {
+  max-width: 400px;
+  width: 100%;
+}
+
+.alli h2 {
+  font-family: var(--font-headline-bold);
+  color: var(--black);
+}
+
+.alli p {
+  font-family: var(--font-content);
+}
+
+@media only screen and (max-width: 680px) {
+  .alli {
+    flex-direction: column;
+  }
+
+  .alli img {
+    max-width: unset;
+  }
+
+  .alli h2 {
+    text-align: center;
+  }
+}
+
+.cv-button {
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 1em;
+}
+
+.cv-button > span {
+  display: block;
+  font-family: var(--font-headline-bold);
+  color: var(--white);
+  width: 100px;
+  text-align: center;
+  background-color: var(--light-blue);
+  text-decoration: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  transition: all 200ms ease-in-out;
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
+}
+
+.cv-panel {
+  margin: 0 auto;
+  margin-top: 3em;
+  border-radius: 50px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  padding: 3em;
+  column-gap: 3em;
+  box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
+}
+
+.cv-panel h3 {
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-family: var(--font-headline-light);
+}
+
+.cv-panel ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-panel li {
+  margin-bottom: 0.2em;
+}
+
+.cv-facts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0, 5em;
+}
+
+.cv-experience {
+  flex: 3;
+}
+
+.cv-experience em {
+  font-weight: 700;
+  display: block;
+}
+
+.cv-facts > div {
+  margin-bottom: 1.7em;
+}
+
+.cv-experience > div > div {
+  margin-bottom: 0.7em;
+}
+
+@media only screen and (max-width: 680px) {
+  .cv-panel {
+    flex-direction: column;
+    overflow: scroll;
+  }
+
+  .cv-facts {
+    flex-direction: row;
+    column-gap: 2em;
+  }
+}

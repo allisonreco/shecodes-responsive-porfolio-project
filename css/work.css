@@ -1,8 +1,8 @@
-h1 {
+h2 {
   margin-top: -20px;
 }
 
-h1,
+h2,
 .p-hero {
   text-align: center;
 }
@@ -54,6 +54,7 @@ h1,
 }
 
 .tags > span > i {
+  color: var(--white);
   margin-right: 0.5em;
 }
 
@@ -115,6 +116,7 @@ h1,
 }
 
 .card-text span > i {
+  color: var(--white);
   margin-right: 0.3em;
 }
 
