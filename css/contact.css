@@ -99,6 +99,12 @@ h3 {
   box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);
 }
 
+.contact-panel input[type="submit"]:disabled {
+  color: var(--white);
+  background-color: var(--blue-grey);
+  box-shadow: none;
+}
+
 .tasks {
   display: flex;
   flex-direction: row;

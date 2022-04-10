@@ -147,16 +147,17 @@ h3 {
   background-color: var(--white);
   border-radius: 25px;
   margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
   width: 360px;
 }
 
-.cta-email > span {
-  font-family: var(--font-headline-light);
+.cta-email span {
   display: block;
   padding: 1em 1em;
 }
 
-.cta-email > span:last-of-type {
+.cta-email > a > span {
   display: block;
   background-color: var(--light-blue);
   color: var(--white);
@@ -164,7 +165,7 @@ h3 {
   transition: all 200ms ease-in-out;
 }
 
-.cta-email > span:last-of-type:hover {
+.cta-email > a > span:hover {
   background-color: var(--pink);
   color: var(--dark-blue);
   box-shadow: 10px 10px 38px rgba(0, 0, 0, 0.1);

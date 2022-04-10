@@ -10,7 +10,8 @@
       src="https://kit.fontawesome.com/8881c9a08f.js"
       crossorigin="anonymous"
     ></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/form.js"></script>
     <title>Allison's Portfolio</title>
   </head>
 
@@ -53,15 +54,28 @@
 
           <div>
             <label for="input-name">My name is</label>
-            <input id="input-name" type="text" placeholder="Your name" />
+            <input
+              id="input-name"
+              type="text"
+              placeholder="Your name"
+              onkeyup="enableButton()"
+            />
 
             <label for="input-company">I work at</label>
-
-            <input id="input-company" type="text" placeholder="Your company" />
+            <input
+              id="input-company"
+              type="text"
+              placeholder="Your company"
+              onkeyup="enableButton()"
+            />
 
             <label for="input-email">My e-mail is</label>
-
-            <input id="input-name" type="email" placeholder="Your e-mail" />
+            <input
+              id="input-email"
+              type="email"
+              placeholder="Your e-mail"
+              onkeyup="enableButton()"
+            />
 
             <p>I'm looking for a partner to help me with:</p>
 
@@ -73,7 +87,7 @@
                   name="webdev"
                   value="webdev"
                 />
-                <label for="webdev">Web development</label>
+                <label for="webdev">Web Development</label>
               </div>
 
               <div>
@@ -109,12 +123,18 @@
 
             <label for="input-details">More details about the project</label>
 
-            <textarea placeholder="Project details" rows="5"></textarea>
+            <textarea
+              id="input-details"
+              placeholder="Project details"
+              rows="5"
+            ></textarea>
 
             <input
               type="submit"
+              id="submit-button"
               value="Get in touch"
-              onclick="alert('Not implemented, please use e-mail to contact me')"
+              disabled="disabled"
+              onclick="submitForm()"
             />
           </div>
         </div>
